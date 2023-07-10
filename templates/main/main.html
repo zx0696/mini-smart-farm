@@ -1,0 +1,121 @@
+{% load static %}
+<head>
+		<title>Dopetrope by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+</head>
+<!-- Header -->
+<section id="header">
+
+<!-- Logo -->
+<!-- <a class="mt-4" href="{% url 'main:main' %}"> -->
+<a class="mt-4" href="/main">
+  <img src="{% static 'images/logofarm.png' %}" alt="" />
+</a>
+
+<nav id="nav"> <ul style="text-align:center">
+  <!-- <li class="current"><a href="{% url 'main:main' %}">Home</a></li> -->
+  <li class="current"><a href="/main">Home</a></li>
+  <li><a href="/iot/mqtt">My Farm</a></li>
+  <li><a href="/data/graph">Enviroment History</a></li>
+  <li><a href="/data/predict">Predict</a></li>
+</nav>
+
+<!-- Banner Area -->
+<section id="banner">
+</section>
+
+<section id="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <!-- 서브 배너 및 정보 -->
+          <section>
+            <header class="major">
+              <h2>스마트팜의 정의와 프로젝트 소개 및 스마트팜 EDA 전달</h2>
+            </header>
+            <article class="box post">
+              <h3>스마트 팜</h3>
+              <p></p>
+              <p style="font-size: 17px;">정보통신기술(ICT)를 활용해 원격으로, 자동으로 '시간과 공간의 제약 없이' 작물의 생육환경을 관측하고 최적의 상태로 관리하는 과학 기반의 농업방식</p>
+              <p></p>
+              <h3>스마트팜의 장점 3가지</h3>
+              <p></p>
+              <p style="text-align:left">현대 사회에서 식품 안전과 식량 안보는 심각한 문제로 대두되고 있습니다. 식품 유통 과정에서 발생하는 문제들은 소비자들에게 걱정과 불안을 안겨줄 수 
+              <br>있으며,  안전하고 신선한 식품에 대한 요구가 증가하고 있습니다. </p>
+              <p style="text-align:left">1. 스마트팜은 소비자들이 직접 안전하고 신선한 식재료를 집에서 생산할 수 있는 혁신적인 해결책을 제공합니다. 개인이 직접 자신이 먹을 식품을 재배하면서 식품 안전성과 식량 안보에 대한 문제를 해결할 수 있습니다.</p>
+              <p style="text-align:left">도시화로 인해 농지 부족과 농업 인력 감소가 심각한 사회 이슈로 부각되고 있습니다. 도시 주민들은 제한된 공간에서도 식물을 효율적으로 재배할 수 있는 방법을 찾고 있습니다.</p>
+              <p style="text-align:left">2. 가정용 스마트팜은 이러한 요구를 충족시키는 솔루션으로 주목받고 있습니다. 가정 내에서 스마트팜을 운영함으로써 도시 주민들은 자체적으로 작물을 재배할 수 있으며, 신선하고 영양가 있는 식재료를 직접 수확할 수 있습니다.</p>
+              <p style="text-align:left">3. 스마트팜은 농업에 대한 이해와 교육을 넓히는 중요한 역할을 합니다. 특히, 어린이들에게 식물 재배와 생태계에 대한 교육적인 경험을 제공함으로써 환경 보호와 지속 가능한 농업에 대한 인식을 높일 수 있습니다. 스마트팜은 소비자들이 식물의 성장 과정을 직접 관찰하고 참여함으로써 환경 문제와 식량 생산의 중요성을 체감할 수 있는 기회를 제공합니다.</p>
+            </article>
+            <div class="row">
+              <div class="col-6 col-12-small">
+                <section class="box">
+                  <a class="image featured"><img src="{% static 'images/smartfarm_n.png' %}" alt="" /></a>
+                  <header>
+                    <h3>작기별 국내 스마트팜 농가 증가 추세</h3>
+                  </header>
+                  <p style="text-align:left">국내 스마트팜 농가는 점점 증가하고 있는 추세입니다. 해당 자료는 스마트팜 데이터마트에서 조사 및 수집한 2015년부터 2021년까지의 데이터를 사용한 그래프이며 최근 약 70%의 증가율을 보이며 급격한 증가를 이루고 있습니다.<br><br><br><br><br><br></p>
+                </section>
+                </div>
+                <div class="col-6 col-12-small">
+                <section class="box">
+                  <a target="_blank" class="image featured"><img src="{% static 'images/search_smartfarm.png' %}" alt="" /></a>
+                  <header>
+                    <h3>연도별 구글 스마트팜 검색량 추이</h3>
+                  </header>
+                  <p style="text-align:left">스마트팜에 대한 관심도는 1980년 초 미국에서 처음으로 언급 된 이후부터 지속적으로 증가했습니다. 발전된 기술을 농업에 적용하여 생산성을 높이고 수확량을 최대화 하는 것은 경제적인 면에서 아주 중요하다고 여겼기 때문입니다. 다른 이유로는 적절한 양의 화학 물질을 적시에 적절한 장소에 적용하면 작물 주기에 큰 영향을 주기 때문입니다. 이러한 이유로 스마트팜은 시간이 흐를수록 발전하고 있습니다. 구글에서 최근 5년간 스마트팜 검색량의 추이를 살펴본 결과, 2019년에 집중적으로 많은 양이 검색되었지만 점진적으로 증가하고 있는 것을 확인할 수 있습니다.</p>
+                </section>
+              </div>
+            </div>
+          </section>
+      </div>
+      <div class="col-12">
+
+        <!-- Blog -->
+        <section>
+          <header class="major">
+            <h2>농사·스마트팜 최신정보</h2>
+          </header>
+          <div class="row">
+            <div class="col-6 col-12-small">
+              <section class="box">
+                <a target="_blank" href="https://data.smartfarmkorea.net/" class="image featured"><img src="{% static 'images/smartfarmkorea.png' %}" alt="" /></a>
+                <header>
+                  <h3>스마트팜 데이터마트</h3>
+                  <p>농림수산식품교육문화정보원</p>
+                </header>
+                <p style="text-align:left">스마트팜 데이터 마트는 스마트팜 관련 시설원예, 축산에 대한 데이터 셋을 제공하고 있으며 시설원예에서는 토마토, 방울토마토, 딸기, 파프리카, 오이, 가지, 참외 7개 품목에 데이터 셋을 제공하고 있으며 축산에서는 한우, 낙농, 양돈, 양계에 대한 데이터 셋을 제공하고 있습니다. 본 사이트에서 제공하는 데이터 셋은 2016년부터 현재까지 농가로 부터 수집되어온 데이터를 기반으로 하고 있습니다.</p>
+              </section>
+            </div>
+            <div class="col-6 col-12-small">
+              <section class="box">
+                <a target="_blank" href="https://smartfarm.rda.go.kr/" class="image featured"><img src="{% static 'images/smartfarminfo.png' %}" alt="" /></a>
+                <header>
+                  <h3>스마트팜 최적환경설정 안내서비스</h3>
+                  <p>농촌진흥청</p>
+                </header>
+                <p style="text-align:left">스마트팜 최적환경설정 안내서비스는 수량증대, 품질제고, 비용 절감 등 최적 수익성 산출을 위해 재배시기, 생육단계별 환경설정을 도출하는 스마트팜 빅데이터활용 생산성 향상 모델을 사용하여 최적의 환경설정 데이터를 제공하고 있습니다. 환경, 생육, 생산량을 조합하여 관계성 분석, 유효변수추출, 모델 생성을 통해 최적환경설정 생육단계별, 생육 데이터 분석 최적 환경 설정의 결과를 나타내고 있습니다.</p>
+              </section>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="col-12">
+  <!-- Copyright -->
+  <div id="copyright">
+    <ul class="links">
+    <li>&copy; Multicampus Data Convergence PJT(TEAM. KSOJ). All rights reserved.</li>
+    <li>Design Ref.: <a target="_blank" href="http://html5up.net">HTML5 UP</a></li>
+    <li><a class="icon brands fa-facebook-f" a target="_blank" href="https://www.facebook.com/multicampus.official"><span class="label">Facebook</span></a></li>
+    <li><a class="icon brands fa-youtube" a target="_blank" href="https://www.youtube.com/multicampus_official"><span class="label">Youtube</span></a>
+    <li><a class="icon brands fa-dribbble" a target="_blank" href="https://post.naver.com/my.nhn?memberNo=44851817"><span class="label">NaverPost</span></a></li>
+    </ul>
+  </div>
+</div>
+
